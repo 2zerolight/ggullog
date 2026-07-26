@@ -1,126 +1,83 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="시/분/초 시간 계산, 근무 시간 및 급여 계산, 실시간 세계 시간대 변환, 뽀모도로 타이머까지! 프리랜서, 크리에이터, 직장인을 위한 스마트 시간 생산성 허브.">
-    <meta name="keywords" content="시간 계산기, 근무시간 계산기, 시급 계산기, 시차 변환기, 세계 시간, 뽀모도로 타이머, 생산성 도구, Time Calculator, Pomodoro">
-    <meta name="author" content="Time & Productivity Hub">
-    <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://example.com/">
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="스마트 시간 및 생산성 허브 | Time & Productivity Hub">
-    <meta property="og:description" content="다양한 시간 관련 계산과 생산성 도구를 한 곳에서 사용해보세요. 광고 노출 유지를 위한 최고의 유틸리티 사이트.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=1200&auto=format&fit=crop">
-
-    <title>스마트 시간 및 생산성 허브 | Time & Productivity Hub</title>
-    <!-- Google Fonts & FontAwesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8241484658511531" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ggullog - 블로그</title>
+  <meta name="description" content="ggullog는 개발 일기와 기술 이야기를 공유하는 블로그입니다. 최신 개발 트렌드와 실전 팁을 만나보세요." />
+  <link rel="stylesheet" href="styles.css" />
+<link rel="canonical" href="https://ggullog.com/" />
+<meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+  <!-- Google AdSense Script (필수) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8241484658511531" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="app-header">
-        <div class="logo">
-            <i class="fa-solid fa-clock-rotate-left logo-icon"></i>
-            <div class="logo-text">
-                <h1>ChronosHub</h1>
-                <span>Time &amp; Productivity Toolset</span>
-            </div>
-        </div>
-        <p class="header-subtitle">업무와 일상 속 모든 시간 계산을 스마트하게 처리하세요.</p>
-        <!-- Header Ad -->
-        <div class="adsense-wrapper header-ad">
-            <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8241484658511531" data-ad-slot="default"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            <div class="ad-fallback-label">SPONSORED ADVERTISEMENT</div>
-        </div>
-    </header>
-
-    <nav class="nav-tabs" id="main-nav">
-        <button class="tab-btn active" data-target="time-calc" id="btn-time-calc"><i class="fa-solid fa-calculator"></i> 시간 계산기</button>
-        <button class="tab-btn" data-target="salary-calc" id="btn-salary-calc"><i class="fa-solid fa-file-invoice-dollar"></i> 근무 및 급여</button>
-        <button class="tab-btn" data-target="tz-converter" id="btn-tz-converter"><i class="fa-solid fa-globe"></i> 세계 시간대</button>
-        <button class="tab-btn" data-target="pomodoro" id="btn-pomodoro"><i class="fa-solid fa-stopwatch"></i> 뽀모도로 타이머</button>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">ggullog</a>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="https://github.com/your-repo" target="_blank">GitHub</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main class="main-content">
-        <!-- Time Calculator -->
-        <section class="tab-content active" id="time-calc">
-            <div class="card">
-                <div class="card-header">
-                    <h2><i class="fa-solid title-icon fa-calculator"></i> 시/분/초 계산기</h2>
-                    <p>여러 개의 시간 값들을 더하거나 뺄 수 있습니다. 영상 편집 시간 계산 및 업무 시간 누적에 유용합니다.</p>
-                </div>
-                <!-- Existing calc UI unchanged – only class name changed to .card -->
-                <!-- ... (the rest of the calculator markup remains the same) -->
-            </div>
-        </section>
-        <!-- Salary Calculator -->
-        <section class="tab-content" id="salary-calc">
-            <div class="card">
-                <div class="card-header">
-                    <h2><i class="fa-solid title-icon fa-file-invoice-dollar"></i> 근무 시간 및 예상 급여 계산기</h2>
-                    <p>출퇴근 시간과 휴게 시간, 시급을 입력하여 하루 총 근무 시간 및 실질 급여를 계산합니다.</p>
-                </div>
-                <!-- Salary UI unchanged -->
-            </div>
-        </section>
-        <!-- Time Zone Converter -->
-        <section class="tab-content" id="tz-converter">
-            <div class="card">
-                <div class="card-header">
-                    <h2><i class="fa-solid title-icon fa-globe"></i> 글로벌 미팅 타임 및 시간대 변환기</h2>
-                    <p>서울 기준 시간대를 드래그하여 세계 주요 도시의 현지 시간을 손쉽게 계산하고 비즈니스 미팅 시간을 찾아보세요.</p>
-                </div>
-                <!-- TZ UI unchanged -->
-            </div>
-        </section>
-        <!-- Pomodoro Timer -->
-        <section class="tab-content" id="pomodoro">
-            <div class="card pomodoro-container">
-                <div class="card-header centered">
-                    <h2><i class="fa-solid title-icon fa-stopwatch"></i> 고집중 뽀모도로 타이머</h2>
-                    <p>25분 집중, 5분 휴식을 통해 업무 효율을 최대로 끌어올리세요.</p>
-                </div>
-                <!-- Pomodoro UI unchanged -->
-            </div>
-        </section>
-        <!-- SEO Articles / Guides -->
-        <section class="card info-section" id="utility-guides">
-            <div class="card-header">
-                <h2><i class="fa-solid title-icon fa-book-open"></i> 시간 생산성 도구 활용 가이드 &amp; 근로기준법 상식</h2>
-                <p>ChronosHub에서 제공하는 각 유틸리티의 과학적 배경 및 관련 법률 정보를 상세히 정리해 드립니다.</p>
-            </div>
-            <!-- Content blocks unchanged -->
-        </section>
-    </main>
+  <main class="content">
+    <article class="post">
+      <h1>환영합니다! ggullog에 오신 것을 환영합니다.</h1>
+      <p>
+        안녕하세요! 이 블로그는 최신 웹 개발, 클라우드 인프라, 그리고 프로그래밍 팁을
+        공유하는 공간입니다. 매주 새로운 포스트를 올리며, 실전 예제와 깊이 있는 분석을
+        제공하고 있습니다.
+      </p>
 
-    <!-- Footer Ad -->
-    <div class="adsense-wrapper footer-ad">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8241484658511531" data-ad-slot="default" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        <div class="ad-fallback-label">SPONSORED ADVERTISEMENT</div>
-    </div>
+      <!-- AdSense 광고 삽입 (첫 번째 단락 뒤) -->
+      <div class="ad-container" style="margin: 20px 0; text-align:center;">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-client="ca-pub-8241484658511531"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
 
-    <footer class="app-footer">
-        <p>&copy; 2026 ChronosHub. All Rights Reserved. Designed to maximize your productivity.</p>
-        <div class="footer-links">
-            <a href="#time-calc" onclick="switchTab('time-calc')">시간 계산기</a>
-            <a href="#salary-calc" onclick="switchTab('salary-calc')">급여 계산기</a>
-            <a href="#tz-converter" onclick="switchTab('tz-converter')">세계 시차</a>
-            <a href="#pomodoro" onclick="switchTab('pomodoro')">뽀모도로 타이머</a>
-            <a href="privacy.html" style="color: var(--secondary); font-weight: 700;">개인정보처리방침</a>
-        </div>
-        <p class="footer-notice">구글 애드센스 규정을 철저히 준수하는 청정 유틸리티 사이트입니다.</p>
-    </footer>
+      <p>
+        여기서는 React, Next.js, Vite, 그리고 서버리스 배포 등 다양한 최신 기술을
+        실제 프로젝트에 적용하는 과정을 상세히 다룹니다. 또한, 구글 애드센스와 같은
+        수익화 전략도 함께 소개하니 기대해 주세요!
+      </p>
 
-    <script src="app.js"></script>
+      <h2>주요 섹션</h2>
+      <ul>
+        <li>프론트엔드 개발 가이드</li>
+        <li>백엔드 아키텍처 설계</li>
+        <li>클라우드 배포와 CI/CD</li>
+        <li>수익화 & SEO 최적화</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 ggullog. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
+
+  <!-- Structured Data (Schema.org) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "ggullog",
+    "url": "https://ggullog.com",
+    "description": "개발 일기와 기술 이야기를 공유하는 블로그",
+    "author": {"@type": "Person", "name": "ggullog"}
+  }
+  </script>
 </body>
 </html>
