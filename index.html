@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chronos Hub – 시간·생산성 도구</title>
+    <meta name="description" content="시/분/초 계산, 근무시간·급여 계산, 세계 시계 변환, 뽀모도로 타이머를 한눈에!" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8241484658511531" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Chronos Hub</h1>
+        <nav class="nav-tabs">
+            <button data-tab="calc" class="active">시간 계산</button>
+            <button data-tab="salary">급여 계산</button>
+            <button data-tab="timezone">시계 변환</button>
+            <button data-tab="pomodoro">뽀모도로</button>
+        </nav>
+    </header>
+
+    <main class="content">
+        <!-- Time Calculator -->
+        <section id="calc" class="tab-section active">
+            <h2>시간 계산기</h2>
+            <div class="calculator">
+                <label>시 <input type="number" id="hours" min="0" value="0" /></label>
+                <label>분 <input type="number" id="minutes" min="0" max="59" value="0" /></label>
+                <label>초 <input type="number" id="seconds" min="0" max="59" value="0" /></label>
+                <button id="calcBtn">계산</button>
+                <p id="result"></p>
+            </div>
+        </section>
+        <!-- Salary Calculator -->
+        <section id="salary" class="tab-section">
+            <h2>근무시간·급여 계산기</h2>
+            <div class="calculator">
+                <label>시급 <input type="number" id="hourly" min="0" step="0.01" /></label>
+                <label>근무시간 <input type="number" id="workHours" min="0" step="0.5" /></label>
+                <button id="salaryBtn">계산</button>
+                <p id="salaryResult"></p>
+            </div>
+        </section>
+        <!-- Timezone Converter -->
+        <section id="timezone" class="tab-section">
+            <h2>세계 시계 변환</h2>
+            <div class="calculator">
+                <label>서울 시&nbsp;<input type="range" id="seoulHour" min="0" max="23" value="12" /></label>
+                <p id="seoulDisplay"></p>
+                <div id="tzResults"></div>
+            </div>
+        </section>
+        <!-- Pomodoro Timer -->
+        <section id="pomodoro" class="tab-section">
+            <h2>뽀모도로 타이머</h2>
+            <div class="pomodoro">
+                <span id="timerDisplay">25:00</span>
+                <button id="startBtn">시작</button>
+                <button id="resetBtn">리셋</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ad Container (responsive) -->
+    <aside class="ad-slot">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-8241484658511531"
+            data-ad-slot="1234567890"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </aside>
+
+    <footer class="footer">
+        © 2026 Chronos Hub. All rights reserved.
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
