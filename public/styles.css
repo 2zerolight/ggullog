@@ -1,4 +1,173 @@
-/* Modern Premium Stylesheet - ChronosHub */
+/* Toss-inspired stylesheet for Chronos Hub */
+
+:root {
+  /* Color palette */
+  --primary: #FF6C00;      /* Toss orange */
+  --primary-hover: #e65a00;
+  --secondary: #00C73C;    /* Success green */
+  --background: #f5f5f5;  /* Light gray page background */
+  --card-bg: #ffffff;     /* White cards */
+  --text-primary: #212121;
+  --text-secondary: #666666;
+  --border-radius: 12px;
+  --transition: all 0.2s ease;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --font-header: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--font-header);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation tabs */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.nav-tabs button {
+  background: #fff;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-tabs button.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.nav-tabs button:hover {
+  background: var(--primary-hover);
+  color: #fff;
+}
+
+/* Card component */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.card-header h2 {
+  font-family: var(--font-header);
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Input fields */
+input, select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255,108,0,0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* Ad container */
+.adsense-wrapper {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
 
 /* --- CSS Variables & Design Tokens --- */
 :root {

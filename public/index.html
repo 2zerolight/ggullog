@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="시/분/초 시간 계산, 근무 시간 및 급여 계산, 실시간 세계 시간대 변환, 뽀모도로 타이머까지! 프리랜서, 크리에이터, 직장인을 위한 스마트 시간 생산성 허브.">
-    <meta name="keywords" content="시간 계산기, 근무시간 계산기, 시급 계산기, 시차 변환기, 세계 시간, 뽀모도로 타이머, 생산성 도구, Time Calculator, Pomodoro">
+    <meta name="description"
+        content="시/분/초 시간 계산, 근무 시간 및 급여 계산, 실시간 세계 시간대 변환, 뽀모도로 타이머까지! 프리랜서, 크리에이터, 직장인을 위한 스마트 시간 생산성 허브.">
+    <meta name="keywords"
+        content="시간 계산기, 근무시간 계산기, 시급 계산기, 시차 변환기, 세계 시간, 뽀모도로 타이머, 생산성 도구, Time Calculator, Pomodoro">
     <meta name="author" content="Time & Productivity Hub">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="스마트 시간 및 생산성 허브 | Time & Productivity Hub">
     <meta property="og:description" content="다양한 시간 관련 계산과 생산성 도구를 한 곳에서 사용해보세요. 광고 노출 유지를 위한 최고의 유틸리티 사이트.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=1200&auto=format&fit=crop">
 
     <title>스마트 시간 및 생산성 허브 | Time & Productivity Hub</title>
 
     <!-- Google Fonts & FontAwesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Local CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google AdSense (User's Script) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8241484658511531"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Background Elements for Visual Flair -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
+    
+    
     <div class="bg-glow bg-glow-3"></div>
 
     <div class="app-container">
@@ -49,14 +56,10 @@
 
         <!-- Google AdSense Header Responsive Ad Placeholder -->
         <div class="adsense-wrapper header-ad">
-            <ins class="adsbygoogle"
-                 style="display:block; text-align:center;"
-                 data-ad-layout="in-article"
-                 data-ad-format="fluid"
-                 data-ad-client="ca-pub-8241484658511531"
-                 data-ad-slot="default"></ins>
+            <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+                data-ad-format="fluid" data-ad-client="ca-pub-8241484658511531" data-ad-slot="default"></ins>
             <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
             <div class="ad-fallback-label">SPONSORED ADVERTISEMENT</div>
         </div>
@@ -79,7 +82,7 @@
 
         <!-- Main Content Area -->
         <main class="main-content">
-            
+
             <!-- Section 1: Time Calculator -->
             <section class="tab-content active" id="time-calc">
                 <div class="card glass">
@@ -87,7 +90,7 @@
                         <h2><i class="fa-solid fa-calculator title-icon"></i> 시/분/초 계산기</h2>
                         <p>여러 개의 시간 값들을 더하거나 뺄 수 있습니다. 영상 편집 시간 계산 및 업무 시간 누적에 유용합니다.</p>
                     </div>
-                    
+
                     <div class="calc-box">
                         <div class="time-list-container">
                             <table class="time-table" id="time-calc-table">
@@ -106,10 +109,14 @@
                                         <td>
                                             <span class="op-label first">시작</span>
                                         </td>
-                                        <td><input type="number" class="time-input hrs" placeholder="0" min="0" value="1" id="hr-0"></td>
-                                        <td><input type="number" class="time-input mins" placeholder="0" min="0" max="59" value="30" id="mn-0"></td>
-                                        <td><input type="number" class="time-input secs" placeholder="0" min="0" max="59" value="0" id="sc-0"></td>
-                                        <td><button class="btn-icon delete-row-btn" disabled><i class="fa-regular fa-trash-can"></i></button></td>
+                                        <td><input type="number" class="time-input hrs" placeholder="0" min="0"
+                                                value="1" id="hr-0"></td>
+                                        <td><input type="number" class="time-input mins" placeholder="0" min="0"
+                                                max="59" value="30" id="mn-0"></td>
+                                        <td><input type="number" class="time-input secs" placeholder="0" min="0"
+                                                max="59" value="0" id="sc-0"></td>
+                                        <td><button class="btn-icon delete-row-btn" disabled><i
+                                                    class="fa-regular fa-trash-can"></i></button></td>
                                     </tr>
                                     <!-- Row 2 -->
                                     <tr class="time-row">
@@ -119,18 +126,24 @@
                                                 <option value="sub">-</option>
                                             </select>
                                         </td>
-                                        <td><input type="number" class="time-input hrs" placeholder="0" min="0" value="0" id="hr-1"></td>
-                                        <td><input type="number" class="time-input mins" placeholder="0" min="0" max="59" value="45" id="mn-1"></td>
-                                        <td><input type="number" class="time-input secs" placeholder="0" min="0" max="59" value="30" id="sc-1"></td>
-                                        <td><button class="btn-icon delete-row-btn" onclick="deleteTimeRow(this)"><i class="fa-regular fa-trash-can"></i></button></td>
+                                        <td><input type="number" class="time-input hrs" placeholder="0" min="0"
+                                                value="0" id="hr-1"></td>
+                                        <td><input type="number" class="time-input mins" placeholder="0" min="0"
+                                                max="59" value="45" id="mn-1"></td>
+                                        <td><input type="number" class="time-input secs" placeholder="0" min="0"
+                                                max="59" value="30" id="sc-1"></td>
+                                        <td><button class="btn-icon delete-row-btn" onclick="deleteTimeRow(this)"><i
+                                                    class="fa-regular fa-trash-can"></i></button></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <div class="calc-actions">
-                            <button id="add-time-row-btn" class="btn btn-secondary"><i class="fa-solid fa-plus"></i> 항목 추가</button>
-                            <button id="clear-time-calc-btn" class="btn btn-tertiary"><i class="fa-solid fa-rotate-left"></i> 초기화</button>
+                            <button id="add-time-row-btn" class="btn btn-secondary"><i class="fa-solid fa-plus"></i> 항목
+                                추가</button>
+                            <button id="clear-time-calc-btn" class="btn btn-tertiary"><i
+                                    class="fa-solid fa-rotate-left"></i> 초기화</button>
                         </div>
 
                         <!-- Result Display -->
@@ -237,7 +250,8 @@
                                 <span class="slider-time-display" id="slider-time-label">오전 09:00 (서울 기준)</span>
                                 <span class="slider-date-display" id="slider-date-label">오늘</span>
                             </div>
-                            <input type="range" id="time-slider" min="0" max="1439" value="540" class="custom-range-slider">
+                            <input type="range" id="time-slider" min="0" max="1439" value="540"
+                                class="custom-range-slider">
                             <div class="slider-ticks">
                                 <span>오전 12</span>
                                 <span>오전 6</span>
@@ -325,8 +339,12 @@
                         <!-- Timer Dial -->
                         <div class="timer-dial-outer">
                             <svg class="timer-ring-svg" width="240" height="240">
-                                <circle class="timer-ring-bg" stroke="rgba(255, 255, 255, 0.05)" stroke-width="8" fill="transparent" r="110" cx="120" cy="120"/>
-                                <circle id="timer-progress-ring" class="timer-ring-progress" stroke="url(#pomo-gradient)" stroke-width="8" stroke-dasharray="691" stroke-dashoffset="0" stroke-linecap="round" fill="transparent" r="110" cx="120" cy="120"/>
+                                <circle class="timer-ring-bg" stroke="rgba(255, 255, 255, 0.05)" stroke-width="8"
+                                    fill="transparent" r="110" cx="120" cy="120" />
+                                <circle id="timer-progress-ring" class="timer-ring-progress"
+                                    stroke="url(#pomo-gradient)" stroke-width="8" stroke-dasharray="691"
+                                    stroke-dashoffset="0" stroke-linecap="round" fill="transparent" r="110" cx="120"
+                                    cy="120" />
                                 <defs>
                                     <linearGradient id="pomo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
                                         <stop offset="0%" stop-color="#818cf8" />
@@ -343,15 +361,19 @@
                         <!-- Timer Controls -->
                         <div class="pomo-controls">
                             <div class="preset-buttons">
-                                <button class="btn btn-preset active" data-time="25" id="btn-preset-25">집중 (25분)</button>
+                                <button class="btn btn-preset active" data-time="25" id="btn-preset-25">집중
+                                    (25분)</button>
                                 <button class="btn btn-preset" data-time="5" id="btn-preset-5">짧은 휴식 (5분)</button>
                                 <button class="btn btn-preset" data-time="15" id="btn-preset-15">긴 휴식 (15분)</button>
                             </div>
-                            
+
                             <div class="action-buttons">
-                                <button id="pomo-start-btn" class="btn btn-primary"><i class="fa-solid fa-play"></i> 시작</button>
-                                <button id="pomo-pause-btn" class="btn btn-secondary" disabled><i class="fa-solid fa-pause"></i> 일시정지</button>
-                                <button id="pomo-reset-btn" class="btn btn-tertiary"><i class="fa-solid fa-arrow-rotate-left"></i> 리셋</button>
+                                <button id="pomo-start-btn" class="btn btn-primary"><i class="fa-solid fa-play"></i>
+                                    시작</button>
+                                <button id="pomo-pause-btn" class="btn btn-secondary" disabled><i
+                                        class="fa-solid fa-pause"></i> 일시정지</button>
+                                <button id="pomo-reset-btn" class="btn btn-tertiary"><i
+                                        class="fa-solid fa-arrow-rotate-left"></i> 리셋</button>
                             </div>
 
                             <div class="sound-toggle">
@@ -375,19 +397,27 @@
                 <div class="info-grid">
                     <div class="info-block">
                         <h3><i class="fa-solid fa-business-time"></i> 1. 시간 계산기(Time Calculator)의 활용 분야</h3>
-                        <p>시/분/초 단위 시간 계산기는 영상 및 오디오 편집(타임코드 계산), 정산 업무, 스포츠 훈련 기록 관리 등 정밀한 시간 누적이 필요한 작업에 매우 요긴하게 쓰입니다. 단순 덧셈뿐만 아니라 뺄셈 옵션을 활용하여 특정 제한 시간 내에 남은 여유 시간을 산출할 수도 있습니다. 소수점 환산법도 자동으로 지원되어 통계 처리에도 용이합니다.</p>
+                        <p>시/분/초 단위 시간 계산기는 영상 및 오디오 편집(타임코드 계산), 정산 업무, 스포츠 훈련 기록 관리 등 정밀한 시간 누적이 필요한 작업에 매우 요긴하게 쓰입니다.
+                            단순 덧셈뿐만 아니라 뺄셈 옵션을 활용하여 특정 제한 시간 내에 남은 여유 시간을 산출할 수도 있습니다. 소수점 환산법도 자동으로 지원되어 통계 처리에도 용이합니다.
+                        </p>
                     </div>
                     <div class="info-block">
                         <h3><i class="fa-solid fa-scale-balanced"></i> 2. 대한민국 근로기준법 및 급여 계산 상식</h3>
-                        <p>대한민국 근로기준법 제54조에 의하면 근로시간이 4시간인 경우에는 30분 이상, 8시간인 경우에는 1시간 이상의 휴게시간을 근로시간 도중에 주어야 합니다. 본 급여 계산기는 이와 같은 법정 휴게시간(점심시간 등)을 제외한 실제 소정근로시간을 바탕으로 시급을 곱해 일일/주간/월간 급여를 모의 계산합니다. 주 15시간 이상 근무 시 지급 의무가 발생하는 주휴수당은 별도 옵션으로 산정해야 합니다.</p>
+                        <p>대한민국 근로기준법 제54조에 의하면 근로시간이 4시간인 경우에는 30분 이상, 8시간인 경우에는 1시간 이상의 휴게시간을 근로시간 도중에 주어야 합니다. 본 급여
+                            계산기는 이와 같은 법정 휴게시간(점심시간 등)을 제외한 실제 소정근로시간을 바탕으로 시급을 곱해 일일/주간/월간 급여를 모의 계산합니다. 주 15시간 이상 근무 시
+                            지급 의무가 발생하는 주휴수당은 별도 옵션으로 산정해야 합니다.</p>
                     </div>
                     <div class="info-block">
                         <h3><i class="fa-solid fa-earth-asia"></i> 3. 글로벌 협업을 위한 세계 시차 계산과 서머타임</h3>
-                        <p>원격 근무와 글로벌 비즈니스가 늘어남에 따라 서로 다른 국가의 시간대를 조율하는 능력이 중요해졌습니다. 대한민국 서울은 UTC+9 시간대를 따르는 반면, 영국 런던은 UTC+0 (BST 서머타임 적용 시 UTC+1), 미국 뉴욕은 UTC-5 (EDT 서머타임 적용 시 UTC-4)를 기준으로 동작합니다. 일광절약시간제(Daylight Saving Time)로 인한 혼선을 방지하기 위해 실시간 시차 변환기를 사용하는 것을 권장합니다.</p>
+                        <p>원격 근무와 글로벌 비즈니스가 늘어남에 따라 서로 다른 국가의 시간대를 조율하는 능력이 중요해졌습니다. 대한민국 서울은 UTC+9 시간대를 따르는 반면, 영국 런던은
+                            UTC+0 (BST 서머타임 적용 시 UTC+1), 미국 뉴욕은 UTC-5 (EDT 서머타임 적용 시 UTC-4)를 기준으로 동작합니다.
+                            일광절약시간제(Daylight Saving Time)로 인한 혼선을 방지하기 위해 실시간 시차 변환기를 사용하는 것을 권장합니다.</p>
                     </div>
                     <div class="info-block">
                         <h3><i class="fa-solid fa-brain"></i> 4. 뽀모도로 기법(Pomodoro Technique)과 뇌 과학</h3>
-                        <p>프란체스코 시릴로가 개발한 뽀모도로 기법은 25분 집중과 5분 휴식을 반복하는 시간 관리 방법론입니다. 인지과학적 연구에 따르면 인간의 고도 집중력은 약 20~30분 주기로 피로감을 느끼기 시작합니다. 이 타이밍에 맞춰 짧은 휴식을 강제함으로써 두뇌의 과부하를 방지하고 피로 누적을 막아 하루 전체의 총 업무 생산성을 극대화하는 원리입니다.</p>
+                        <p>프란체스코 시릴로가 개발한 뽀모도로 기법은 25분 집중과 5분 휴식을 반복하는 시간 관리 방법론입니다. 인지과학적 연구에 따르면 인간의 고도 집중력은 약 20~30분
+                            주기로 피로감을 느끼기 시작합니다. 이 타이밍에 맞춰 짧은 휴식을 강제함으로써 두뇌의 과부하를 방지하고 피로 누적을 막아 하루 전체의 총 업무 생산성을 극대화하는
+                            원리입니다.</p>
                     </div>
                 </div>
             </section>
@@ -396,14 +426,10 @@
 
         <!-- Google AdSense Footer Responsive Ad Placeholder -->
         <div class="adsense-wrapper footer-ad">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8241484658511531"
-                 data-ad-slot="default"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8241484658511531"
+                data-ad-slot="default" data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
             <div class="ad-fallback-label">SPONSORED ADVERTISEMENT</div>
         </div>
@@ -425,4 +451,5 @@
     <!-- Local JS script -->
     <script src="app.js"></script>
 </body>
+
 </html>
