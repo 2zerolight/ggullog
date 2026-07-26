@@ -10,13 +10,13 @@ PAGES_DIR = os.path.join(BASE, 'pages')
 OUT = os.path.join(BASE, 'site')
 SITE_URL = 'https://ggullog.com'
 SITE_NAME = '꿀로그'
-SITE_DESC = '오늘부터 바로 써먹는 생활 꿀팁 — 절약, 살림, 요리, 디지털 정보 블로그'
+SITE_DESC = '직접 해보고 효과를 본 생활 정보를 기록합니다. 절약과 살림, 주방과 디지털 생활 이야기.'
 
 CATEGORIES = {
-    'saving': ('절약·재테크', '생활비를 아끼고 돈을 모으는 현실적인 방법'),
-    'home': ('살림·청소', '집안일이 쉬워지는 검증된 살림 노하우'),
-    'food': ('요리·식재료', '식재료 관리부터 조리 기초까지 주방 실전 지식'),
-    'digital': ('디지털·생활편의', '스마트폰과 온라인 생활을 더 안전하고 알뜰하게'),
+    'saving': ('절약·재테크', '매달 새는 돈을 조금씩 줄여본 기록'),
+    'home': ('살림·청소', '기름때와 곰팡이와 싸우며 배운 살림 요령'),
+    'food': ('요리·식재료', '식재료를 덜 버리게 된 보관법과 주방 이야기'),
+    'digital': ('디지털·생활편의', '요금제부터 스미싱까지, 디지털 생활 정리'),
 }
 
 MD = markdown.Markdown(extensions=['tables', 'toc', 'fenced_code'])
@@ -65,9 +65,9 @@ def layout(title, description, content, canonical, active=''):
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="logo"><span class="logo-mark">꿀</span>로그</a>
+    <a href="/" class="logo"><span class="logo-mark">꿀</span>로그 <span style="font-family:var(--sans);font-size:0.72rem;color:var(--ink-faint);letter-spacing:0.5px;font-weight:400;">ggullog.com</span></a>
     <nav class="main-nav">{nav_items}</nav>
-    <button class="nav-toggle" aria-label="메뉴 열기" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰</button>
+
   </div>
 </header>
 <main class="container">
@@ -125,7 +125,7 @@ def build():
   <header class="post-header">
     <h1>{html.escape(p['title'])}</h1>
     <div class="post-meta">
-      <span class="author">꿀로그 편집팀</span> ·
+      <span class="author">꿀로그</span> ·
       <time datetime="{p['date']}">{fmt_date(p['date'])}</time> ·
       <span>{p['reading_min']}분 읽기</span>
     </div>
@@ -142,8 +142,8 @@ def build():
     # ---- index ----
     latest = posts[:6]
     hero = f'''<section class="hero">
-  <h1>생활을 바꾸는 진짜 꿀팁, {SITE_NAME}</h1>
-  <p>절약·살림·요리·디지털, 오늘부터 바로 써먹는 검증된 생활 정보를 전해드립니다.</p>
+  <h1>살아보니 알게 된 것들을<br>천천히 기록하는 곳</h1>
+  <p>전기요금 고지서에 놀라고, 냉장고 속 시들어가는 채소에 미안해하며 배운 것들. 직접 해보고 효과를 본 생활 정보만 적습니다.</p>
 </section>'''
     cat_sections = ''
     for code, (name, desc) in CATEGORIES.items():
@@ -160,7 +160,7 @@ def build():
   <div class="grid">{''.join(post_card(p) for p in latest)}</div>
 </section>''' + cat_sections
     open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(
-        layout(f'{SITE_NAME} — 생활을 바꾸는 진짜 꿀팁', SITE_DESC, index_content, SITE_URL + '/'))
+        layout(f'{SITE_NAME} — 살아보니 알게 된 생활의 기록', SITE_DESC, index_content, SITE_URL + '/'))
 
     # ---- category pages ----
     for code, (name, desc) in CATEGORIES.items():
