@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="시/분/초 시간 계산, 근무 시간 및 급여 계산, 실시간 세계 시간대 변환, 뽀모도로 타이머까지! 프리랜서, 크리에이터, 직장인을 위한 스마트 시간 생산성 허브.">
+    <meta name="keywords" content="시간 계산기, 근무시간 계산기, 시급 계산기, 시차 변환기, 세계 시간, 뽀모도로 타이머, 생산성 도구, Time Calculator, Pomodoro">
+    <meta name="author" content="Time & Productivity Hub">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="스마트 시간 및 생산성 허브 | Time & Productivity Hub">
+    <meta property="og:description" content="다양한 시간 관련 계산과 생산성 도구를 한 곳에서 사용해보세요. 광고 노출 유지를 위한 최고의 유틸리티 사이트.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=1200&auto=format&fit=crop">
+
+    <title>스마트 시간 및 생산성 허브 | Time & Productivity Hub</title>
+
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Local CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google AdSense (User's Script) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8241484658511531"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Background Elements for Visual Flair -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <i class="fa-solid fa-clock-rotate-left logo-icon"></i>
+                <div class="logo-text">
+                    <h1>ChronosHub</h1>
+                    <span>Time & Productivity Toolset</span>
+                </div>
+            </div>
+            <p class="header-subtitle">업무와 일상 속 모든 시간 계산을 스마트하게 처리하세요.</p>
+        </header>
+
+        <!-- Google AdSense Header Responsive Ad Placeholder -->
+        <div class="adsense-wrapper header-ad">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8241484658511531"
+                 data-ad-slot="default"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div class="ad-fallback-label">SPONSORED ADVERTISEMENT</div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs" id="main-nav">
+            <button class="tab-btn active" data-target="time-calc" id="btn-time-calc">
+                <i class="fa-solid fa-calculator"></i> 시간 계산기
+            </button>
+            <button class="tab-btn" data-target="salary-calc" id="btn-salary-calc">
+                <i class="fa-solid fa-file-invoice-dollar"></i> 근무 및 급여
+            </button>
+            <button class="tab-btn" data-target="tz-converter" id="btn-tz-converter">
+                <i class="fa-solid fa-globe"></i> 세계 시간대
+            </button>
+            <button class="tab-btn" data-target="pomodoro" id="btn-pomodoro">
+                <i class="fa-solid fa-stopwatch"></i> 뽀모도로 타이머
+            </button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Section 1: Time Calculator -->
+            <section class="tab-content active" id="time-calc">
+                <div class="card glass">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-calculator title-icon"></i> 시/분/초 계산기</h2>
+                        <p>여러 개의 시간 값들을 더하거나 뺄 수 있습니다. 영상 편집 시간 계산 및 업무 시간 누적에 유용합니다.</p>
+                    </div>
+                    
+                    <div class="calc-box">
+                        <div class="time-list-container">
+                            <table class="time-table" id="time-calc-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 15%">연산</th>
+                                        <th style="width: 25%">시간 (H)</th>
+                                        <th style="width: 25%">분 (M)</th>
+                                        <th style="width: 25%">초 (S)</th>
+                                        <th style="width: 10%">삭제</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="time-calc-rows">
+                                    <!-- Row 1 -->
+                                    <tr class="time-row">
+                                        <td>
+                                            <span class="op-label first">시작</span>
+                                        </td>
+                                        <td><input type="number" class="time-input hrs" placeholder="0" min="0" value="1" id="hr-0"></td>
+                                        <td><input type="number" class="time-input mins" placeholder="0" min="0" max="59" value="30" id="mn-0"></td>
+                                        <td><input type="number" class="time-input secs" placeholder="0" min="0" max="59" value="0" id="sc-0"></td>
+                                        <td><button class="btn-icon delete-row-btn" disabled><i class="fa-regular fa-trash-can"></i></button></td>
+                                    </tr>
+                                    <!-- Row 2 -->
+                                    <tr class="time-row">
+                                        <td>
+                                            <select class="op-select" id="op-1">
+                                                <option value="add">+</option>
+                                                <option value="sub">-</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="number" class="time-input hrs" placeholder="0" min="0" value="0" id="hr-1"></td>
+                                        <td><input type="number" class="time-input mins" placeholder="0" min="0" max="59" value="45" id="mn-1"></td>
+                                        <td><input type="number" class="time-input secs" placeholder="0" min="0" max="59" value="30" id="sc-1"></td>
+                                        <td><button class="btn-icon delete-row-btn" onclick="deleteTimeRow(this)"><i class="fa-regular fa-trash-can"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="calc-actions">
+                            <button id="add-time-row-btn" class="btn btn-secondary"><i class="fa-solid fa-plus"></i> 항목 추가</button>
+                            <button id="clear-time-calc-btn" class="btn btn-tertiary"><i class="fa-solid fa-rotate-left"></i> 초기화</button>
+                        </div>
+
+                        <!-- Result Display -->
+                        <div class="result-panel">
+                            <div class="result-title">계산 결과</div>
+                            <div class="result-value" id="time-calc-result">2시간 15분 30초</div>
+                            <div class="result-details" id="time-calc-details">총 8,130초 (135.5분)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Salary Calculator -->
+            <section class="tab-content" id="salary-calc">
+                <div class="card glass">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-file-invoice-dollar title-icon"></i> 근무 시간 및 예상 급여 계산기</h2>
+                        <p>출퇴근 시간과 휴게 시간, 시급을 입력하여 하루 총 근무 시간 및 실질 급여를 계산합니다.</p>
+                    </div>
+
+                    <div class="grid-layout">
+                        <!-- Inputs -->
+                        <div class="input-section">
+                            <div class="form-group">
+                                <label for="hourly-wage"><i class="fa-solid fa-coins"></i> 시급 (₩)</label>
+                                <input type="number" id="hourly-wage" value="10030" min="0" step="10">
+                                <span class="input-helper">2026년 최저임금: 10,030원</span>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="work-start"><i class="fa-regular fa-clock"></i> 출근 시간</label>
+                                    <input type="time" id="work-start" value="09:00">
+                                </div>
+                                <div class="form-group">
+                                    <label for="work-end"><i class="fa-regular fa-clock"></i> 퇴근 시간</label>
+                                    <input type="time" id="work-end" value="18:00">
+                                </div>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="break-mins"><i class="fa-solid fa-mug-hot"></i> 휴게 시간 (분)</label>
+                                    <input type="number" id="break-mins" value="60" min="0" max="480">
+                                    <span class="input-helper">통상 점심시간: 60분</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="weekly-days"><i class="fa-solid fa-calendar-days"></i> 근무 일수 (주)</label>
+                                    <select id="weekly-days">
+                                        <option value="1">주 1일</option>
+                                        <option value="2">주 2일</option>
+                                        <option value="3">주 3일</option>
+                                        <option value="4">주 4일</option>
+                                        <option value="5" selected>주 5일 (평일)</option>
+                                        <option value="6">주 6일</option>
+                                        <option value="7">주 7일</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Results -->
+                        <div class="salary-result-panel">
+                            <div class="salary-card">
+                                <div class="sal-metric">
+                                    <span class="sal-label">일일 실제 근무 시간</span>
+                                    <span class="sal-val" id="daily-work-hours">8.00 시간</span>
+                                </div>
+                                <hr class="divider">
+                                <div class="sal-metric">
+                                    <span class="sal-label">일일 예상 급여</span>
+                                    <span class="sal-val highlight" id="daily-salary">₩ 80,240</span>
+                                </div>
+                                <div class="sal-metric small">
+                                    <span class="sal-label">주간 예상 근무 시간</span>
+                                    <span class="sal-val" id="weekly-work-hours">40.00 시간</span>
+                                </div>
+                                <div class="sal-metric">
+                                    <span class="sal-label">주간 예상 급여</span>
+                                    <span class="sal-val" id="weekly-salary">₩ 401,200</span>
+                                </div>
+                                <div class="sal-metric highlight-box">
+                                    <span class="sal-label">월간 예상 급여 (주휴수당 미포함)</span>
+                                    <span class="sal-val font-large" id="monthly-salary">₩ 1,745,220</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Time Zone Converter -->
+            <section class="tab-content" id="tz-converter">
+                <div class="card glass">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-globe title-icon"></i> 글로벌 미팅 타임 및 시간대 변환기</h2>
+                        <p>서울 기준 시간대를 드래그하여 세계 주요 도시의 현지 시간을 손쉽게 계산하고 비즈니스 미팅 시간을 찾아보세요.</p>
+                    </div>
+
+                    <div class="tz-converter-box">
+                        <!-- Time Slider -->
+                        <div class="slider-wrapper">
+                            <div class="slider-header">
+                                <span class="slider-time-display" id="slider-time-label">오전 09:00 (서울 기준)</span>
+                                <span class="slider-date-display" id="slider-date-label">오늘</span>
+                            </div>
+                            <input type="range" id="time-slider" min="0" max="1439" value="540" class="custom-range-slider">
+                            <div class="slider-ticks">
+                                <span>오전 12</span>
+                                <span>오전 6</span>
+                                <span>오전 12 (정오)</span>
+                                <span>오후 6</span>
+                                <span>오후 12</span>
+                            </div>
+                        </div>
+
+                        <!-- Time Zones List -->
+                        <div class="tz-list" id="tz-list-container">
+                            <!-- Seoul (Base) -->
+                            <div class="tz-card base-tz">
+                                <div class="tz-info">
+                                    <span class="tz-name">서울, 대한민국</span>
+                                    <span class="tz-offset">UTC+9 (기준)</span>
+                                </div>
+                                <div class="tz-time-box">
+                                    <span class="tz-time" id="time-seoul">09:00 AM</span>
+                                    <span class="tz-date" id="date-seoul">2026. 07. 26. (일)</span>
+                                </div>
+                            </div>
+
+                            <!-- New York -->
+                            <div class="tz-card">
+                                <div class="tz-info">
+                                    <span class="tz-name">뉴욕, 미국 (EST/EDT)</span>
+                                    <span class="tz-offset">UTC-4 (13시간 느림)</span>
+                                </div>
+                                <div class="tz-time-box">
+                                    <span class="tz-time" id="time-newyork">08:00 PM</span>
+                                    <span class="tz-date" id="date-newyork">어제</span>
+                                </div>
+                            </div>
+
+                            <!-- London -->
+                            <div class="tz-card">
+                                <div class="tz-info">
+                                    <span class="tz-name">런던, 영국 (GMT/BST)</span>
+                                    <span class="tz-offset">UTC+1 (8시간 느림)</span>
+                                </div>
+                                <div class="tz-time-box">
+                                    <span class="tz-time" id="time-london">01:00 AM</span>
+                                    <span class="tz-date" id="date-london">오늘</span>
+                                </div>
+                            </div>
+
+                            <!-- Tokyo -->
+                            <div class="tz-card">
+                                <div class="tz-info">
+                                    <span class="tz-name">도쿄, 일본 (JST)</span>
+                                    <span class="tz-offset">UTC+9 (동일)</span>
+                                </div>
+                                <div class="tz-time-box">
+                                    <span class="tz-time" id="time-tokyo">09:00 AM</span>
+                                    <span class="tz-date" id="date-tokyo">오늘</span>
+                                </div>
+                            </div>
+
+                            <!-- Sydney -->
+                            <div class="tz-card">
+                                <div class="tz-info">
+                                    <span class="tz-name">시드니, 호주 (AEST)</span>
+                                    <span class="tz-offset">UTC+10 (1시간 빠름)</span>
+                                </div>
+                                <div class="tz-time-box">
+                                    <span class="tz-time" id="time-sydney">10:00 AM</span>
+                                    <span class="tz-date" id="date-sydney">오늘</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Pomodoro Timer -->
+            <section class="tab-content" id="pomodoro">
+                <div class="card glass pomodoro-container">
+                    <div class="card-header centered">
+                        <h2><i class="fa-solid fa-stopwatch title-icon"></i> 고집중 뽀모도로 타이머</h2>
+                        <p>25분 집중, 5분 휴식을 통해 업무 효율을 최대로 끌어올리세요.</p>
+                    </div>
+
+                    <div class="pomo-layout">
+                        <!-- Timer Dial -->
+                        <div class="timer-dial-outer">
+                            <svg class="timer-ring-svg" width="240" height="240">
+                                <circle class="timer-ring-bg" stroke="rgba(255, 255, 255, 0.05)" stroke-width="8" fill="transparent" r="110" cx="120" cy="120"/>
+                                <circle id="timer-progress-ring" class="timer-ring-progress" stroke="url(#pomo-gradient)" stroke-width="8" stroke-dasharray="691" stroke-dashoffset="0" stroke-linecap="round" fill="transparent" r="110" cx="120" cy="120"/>
+                                <defs>
+                                    <linearGradient id="pomo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#818cf8" />
+                                        <stop offset="100%" stop-color="#38bdf8" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="timer-display">
+                                <span class="timer-countdown" id="pomo-time-display">25:00</span>
+                                <span class="timer-status" id="pomo-status-label">집중 시간</span>
+                            </div>
+                        </div>
+
+                        <!-- Timer Controls -->
+                        <div class="pomo-controls">
+                            <div class="preset-buttons">
+                                <button class="btn btn-preset active" data-time="25" id="btn-preset-25">집중 (25분)</button>
+                                <button class="btn btn-preset" data-time="5" id="btn-preset-5">짧은 휴식 (5분)</button>
+                                <button class="btn btn-preset" data-time="15" id="btn-preset-15">긴 휴식 (15분)</button>
+                            </div>
+                            
+                            <div class="action-buttons">
+                                <button id="pomo-start-btn" class="btn btn-primary"><i class="fa-solid fa-play"></i> 시작</button>
+                                <button id="pomo-pause-btn" class="btn btn-secondary" disabled><i class="fa-solid fa-pause"></i> 일시정지</button>
+                                <button id="pomo-reset-btn" class="btn btn-tertiary"><i class="fa-solid fa-arrow-rotate-left"></i> 리셋</button>
+                            </div>
+
+                            <div class="sound-toggle">
+                                <label class="switch-container">
+                                    <input type="checkbox" id="sound-chk" checked>
+                                    <span class="switch-slider"></span>
+                                </label>
+                                <span>완료 시 알림 소리 켜기</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Google AdSense Footer Responsive Ad Placeholder -->
+        <div class="adsense-wrapper footer-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-8241484658511531"
+                 data-ad-slot="default"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div class="ad-fallback-label">SPONSORED ADVERTISEMENT</div>
+        </div>
+
+        <!-- App Footer -->
+        <footer class="app-footer">
+            <p>&copy; 2026 ChronosHub. All Rights Reserved. Designed to maximize your productivity.</p>
+            <div class="footer-links">
+                <a href="#time-calc" onclick="switchTab('time-calc')">시간 계산기</a>
+                <a href="#salary-calc" onclick="switchTab('salary-calc')">급여 계산기</a>
+                <a href="#tz-converter" onclick="switchTab('tz-converter')">세계 시차</a>
+                <a href="#pomodoro" onclick="switchTab('pomodoro')">뽀모도로 타이머</a>
+            </div>
+            <p class="footer-notice">구글 애드센스 규정을 철저히 준수하는 청정 유틸리티 사이트입니다.</p>
+        </footer>
+    </div>
+
+    <!-- Local JS script -->
+    <script src="app.js"></script>
+</body>
+</html>
