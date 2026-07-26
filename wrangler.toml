@@ -1,0 +1,10 @@
+name = "ggullog"
+compatibility_date = "2026-07-01"
+
+[assets]
+directory = "./site"
+not_found_handling = "404-page"
+html_handling = "auto-trailing-slash"
+
+# 커스텀 도메인 연결은 Cloudflare 대시보드 > Workers > 설정 > 도메인 및 경로에서
+# ggullog.com 을 추가하면 됩니다.
