@@ -924,3 +924,36 @@ label {
         padding: 20px;
     }
 }
+
+/* --- Info Section SEO Styles --- */
+.info-section {
+    margin-top: 32px;
+    line-height: 1.8;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 24px;
+}
+.info-block h3 {
+    font-family: var(--font-header);
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.info-block p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-align: justify;
+}
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
