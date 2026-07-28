@@ -10,13 +10,13 @@ PAGES_DIR = os.path.join(BASE, 'pages')
 OUT = os.path.join(BASE, 'site')
 SITE_URL = 'https://ggullog.com'
 SITE_NAME = '꿀로그'
-SITE_DESC = '직접 해보고 효과를 본 생활 정보를 기록합니다. 절약과 살림, 주방과 디지털 생활 이야기.'
+SITE_DESC = '복잡한 정보는 줄이고, 꼭 필요한 핵심만 담았습니다. 직접 경험하고 검증한 생활 노하우를 쉽고 간결하게 전해드립니다.'
 
 CATEGORIES = {
-    'saving': ('절약·재테크', '매달 새는 돈을 조금씩 줄여본 기록'),
-    'home': ('살림·청소', '기름때와 곰팡이와 싸우며 배운 살림 요령'),
-    'food': ('요리·식재료', '식재료를 덜 버리게 된 보관법과 주방 이야기'),
-    'digital': ('디지털·생활편의', '요금제부터 스미싱까지, 디지털 생활 정리'),
+    'saving': ('절약·재테크', '돈을 아끼고 불리는 현실적인 노하우'),
+    'home': ('살림·청소', '집안일을 효율적으로 만드는 실용적인 팁'),
+    'food': ('요리·식재료', '건강하고 맛있는 식탁을 위한 주방 지혜'),
+    'digital': ('디지털·생활편의', '스마트한 디지털 생활을 위한 정보'),
 }
 
 MD = markdown.Markdown(extensions=['tables', 'toc', 'fenced_code'])
@@ -65,7 +65,7 @@ def layout(title, description, content, canonical, active=''):
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="logo"><span class="logo-mark">꿀</span>로그 <span style="font-family:var(--sans);font-size:0.72rem;color:var(--ink-faint);letter-spacing:0.5px;font-weight:400;">ggullog.com</span></a>
+    <a href="/" class="logo"><span class="logo-mark">꿀</span>로그</a>
     <nav class="main-nav">{nav_items}</nav>
 
   </div>
@@ -91,7 +91,7 @@ def post_card(p):
     cat_name = CATEGORIES[p['category']][0]
     return f'''<article class="card">
   <a href="/posts/{p['slug']}.html" class="card-link">
-    <span class="card-cat cat-{p['category']}">{cat_name}</span>
+    <span class="card-cat">{cat_name}</span>
     <h2 class="card-title">{html.escape(p['title'])}</h2>
     <p class="card-desc">{html.escape(p['description'])}</p>
     <div class="card-meta"><time datetime="{p['date']}">{fmt_date(p['date'])}</time> · {p['reading_min']}분 읽기</div>
@@ -120,20 +120,22 @@ def build():
         if related:
             related_html = '<section class="related"><h2>함께 읽으면 좋은 글</h2><div class="grid">' + \
                 ''.join(post_card(q) for q in related) + '</div></section>'
-        content = f'''<article class="post">
+        content = f'''<div class="post-wrapper">
   <nav class="breadcrumb"><a href="/">홈</a> › <a href="/category-{p['category']}.html">{cat_name}</a></nav>
-  <header class="post-header">
-    <h1>{html.escape(p['title'])}</h1>
-    <div class="post-meta">
-      <span class="author">꿀로그</span> ·
-      <time datetime="{p['date']}">{fmt_date(p['date'])}</time> ·
-      <span>{p['reading_min']}분 읽기</span>
-    </div>
-  </header>
-  <div class="post-body">
+  <article class="post">
+    <header class="post-header">
+      <h1>{html.escape(p['title'])}</h1>
+      <div class="post-meta">
+        <span class="author">꿀로그</span> ·
+        <time datetime="{p['date']}">{fmt_date(p['date'])}</time> ·
+        <span>{p['reading_min']}분 읽기</span>
+      </div>
+    </header>
+    <div class="post-body">
 {p['html']}
-  </div>
-</article>
+    </div>
+  </article>
+</div>
 {related_html}'''
         page = layout(f"{p['title']} | {SITE_NAME}", p['description'], content,
                       f"{SITE_URL}/posts/{p['slug']}.html", p['category'])
@@ -142,31 +144,31 @@ def build():
     # ---- index ----
     latest = posts[:6]
     hero = f'''<section class="hero">
-  <h1>살아보니 알게 된 것들을<br>천천히 기록하는 곳</h1>
-  <p>전기요금 고지서에 놀라고, 냉장고 속 시들어가는 채소에 미안해하며 배운 것들. 직접 해보고 효과를 본 생활 정보만 적습니다.</p>
+  <h1>생활 속 작은 꿀팁,<br>더 나은 일상을 만듭니다</h1>
+  <p>복잡한 정보는 줄이고, 꼭 필요한 핵심만 담았습니다. 직접 경험하고 검증한 생활 노하우를 쉽고 간결하게 전해드립니다.</p>
 </section>'''
     cat_sections = ''
     for code, (name, desc) in CATEGORIES.items():
         cposts = [p for p in posts if p['category'] == code][:4]
-        cat_sections += f'''<section class="cat-section">
-  <div class="section-head">
-    <h2>{name}</h2>
-    <a href="/category-{code}.html" class="more">전체 보기 →</a>
-  </div>
+        cat_sections += f'''<section class="cat-section container">
+  <h2 class="section-title">{name}</h2>
   <div class="grid">{''.join(post_card(p) for p in cposts)}</div>
 </section>'''
-    index_content = hero + f'''<section class="cat-section">
-  <div class="section-head"><h2>최신 글</h2></div>
+    index_content = hero + f'''<section class="cat-section container">
+  <h2 class="section-title">최신 글</h2>
   <div class="grid">{''.join(post_card(p) for p in latest)}</div>
 </section>''' + cat_sections
     open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(
-        layout(f'{SITE_NAME} — 살아보니 알게 된 생활의 기록', SITE_DESC, index_content, SITE_URL + '/'))
+        layout(f'{SITE_NAME} — 생활 속 작은 꿀팁, 더 나은 일상을 만듭니다', SITE_DESC, index_content, SITE_URL + '/'))
 
     # ---- category pages ----
     for code, (name, desc) in CATEGORIES.items():
         cposts = [p for p in posts if p['category'] == code]
-        content = f'''<section class="cat-hero"><h1>{name}</h1><p>{desc}</p></section>
-<div class="grid">{''.join(post_card(p) for p in cposts)}</div>'''
+        content = f'''<section class="cat-hero">
+  <h1>{name}</h1>
+  <p>{desc}</p>
+</section>
+<div class="container grid">{''.join(post_card(p) for p in cposts)}</div>'''
         open(os.path.join(OUT, f'category-{code}.html'), 'w', encoding='utf-8').write(
             layout(f'{name} | {SITE_NAME}', desc, content, f'{SITE_URL}/category-{code}.html', code))
 
@@ -174,10 +176,12 @@ def build():
     for fn in os.listdir(PAGES_DIR):
         if fn.endswith('.md'):
             pg = parse_md(os.path.join(PAGES_DIR, fn))
-            content = f'''<article class="post static-page">
-  <header class="post-header"><h1>{html.escape(pg['title'])}</h1></header>
-  <div class="post-body">{pg['html']}</div>
-</article>'''
+            content = f'''<div class="post-wrapper static-page">
+  <article class="post">
+    <header class="post-header"><h1>{html.escape(pg['title'])}</h1></header>
+    <div class="post-body">{pg['html']}</div>
+  </article>
+</div>'''
             open(os.path.join(OUT, pg['slug'] + '.html'), 'w', encoding='utf-8').write(
                 layout(f"{pg['title']} | {SITE_NAME}", pg['title'] + ' — ' + SITE_NAME, content,
                        f"{SITE_URL}/{pg['slug']}.html"))
@@ -200,8 +204,10 @@ def build():
         'google.com, pub-8241484658511531, DIRECT, f08c47fec0942fa0\n')
 
     # ---- 404 ----
-    content404 = '''<section class="hero"><h1>페이지를 찾을 수 없습니다</h1>
-<p>주소가 잘못되었거나 삭제된 페이지입니다. <a href="/">홈으로 돌아가기</a></p></section>'''
+    content404 = '''<section class="hero">
+  <h1>페이지를 찾을 수 없습니다</h1>
+  <p>주소가 잘못되었거나 삭제된 페이지입니다. <a href="/">홈으로 돌아가기</a></p>
+</section>'''
     open(os.path.join(OUT, '404.html'), 'w', encoding='utf-8').write(
         layout(f'페이지를 찾을 수 없습니다 | {SITE_NAME}', '404', content404, SITE_URL + '/404.html'))
 
