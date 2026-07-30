@@ -1,11 +1,14 @@
 ---
 title: "마트에서 속지 않는 여름 과일 고르기와 끝까지 싱싱한 보관법"
+thumbnail: "/assets/images/food-summer-fruits.jpg"
 slug: "food-summer-fruits"
 category: "food"
 category_name: "요리·식재료"
 date: "2026-07-14"
 description: "매번 버리던 수박과 복숭아, 이제는 끝까지 맛있게 먹고 있어요. 실패 없는 과일 고르기부터 무르지 않는 보관법까지 제 경험을 담았습니다."
 ---
+
+![food-summer-fruits](/assets/images/food-summer-fruits.jpg)
 
 지난주에 동네 마트에서 수박 반값 할인을 하길래 덜컥 10kg짜리 대형 수박을 사 왔습니다. 낑낑대며 들고 와서 썰었는데, 속은 텅 비어있고 단맛은 하나도 없더라고요. 억지로 먹어보려다 결국 절반은 음식물 쓰레기통으로 직행했습니다. 과일값도 비싼데 버리는 게 더 많으니 속이 쓰렸죠. 사실 여름 과일은 크고 무거워서 한 번 실패하면 타격이 큽니다. 특히 요즘처럼 물가가 오를 때는 마트 전단지 할인 행사만 보고 샀다가 낭패를 보는 일이 잦거든요. 
 

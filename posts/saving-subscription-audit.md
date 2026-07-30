@@ -1,11 +1,14 @@
 ---
 title: "새는 돈 막는 구독료 다이어트, 직접 해보고 알게 된 것들"
+thumbnail: "/assets/images/saving-subscription-audit.jpg"
 slug: "saving-subscription-audit"
 category: "saving"
 category_name: "절약·재테크"
 date: "2026-06-15"
 description: "매달 통장에서 조용히 빠져나가는 구독료. 직접 카드 명세서를 뒤져가며 OTT와 멤버십을 정리해 본 현실적인 팁과 공유 요금제 활용 경험을 나눕니다."
 ---
+
+![saving-subscription-audit](/assets/images/saving-subscription-audit.jpg)
 
 지난달 카드 명세서를 보다가 한참을 멍하니 있었습니다. 평소보다 지출이 10만 원이나 더 나왔거든요. 
 

@@ -1,11 +1,14 @@
 ---
 title: "계란, 냉장고 문짝에 두면 안 되는 이유 (신선도 확인법부터 삶는 시간까지)"
+thumbnail: "/assets/images/food-egg-handling.jpg"
 slug: "food-egg-handling"
 category: "food"
 category_name: "요리·식재료"
 date: "2026-06-15"
 description: "계란 살 때마다 헷갈리는 난각번호 읽는 법, 오래된 계란 구별법, 그리고 실패 없는 반숙 삶기 시간까지. 10년 차 주부의 현실적인 계란 보관 및 활용 노하우를 담았습니다."
 ---
+
+![food-egg-handling](/assets/images/food-egg-handling.jpg)
 
 지난주 주말, 마트에서 세일하길래 덥석 집어온 계란 두 판. 냉장고에 넣으려고 보니 예전에 사둔 계란이 아직 반 판이나 남아있더라고요. 언제 샀는지 기억도 가물가물해서 버려야 하나 고민하다가, 문득 예전에 친정엄마가 알려주신 방법이 떠올랐습니다. 
 

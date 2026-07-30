@@ -1,11 +1,14 @@
 ---
 title: "택배 문자 잘못 눌렀다가 식겁한 썰 (스미싱 예방 설정법)"
+thumbnail: "/assets/images/digital-scam-prevention.jpg"
 slug: "digital-scam-prevention"
 category: "digital"
 category_name: "디지털·생활편의"
 date: "2026-06-15"
 description: "요즘 유행하는 택배, 부고 문자 스미싱 수법과 직접 겪은 아찔한 경험담. 스마트폰 보안 설정부터 피해 발생 시 대처법까지 현실적인 조언을 담았습니다."
 ---
+
+![digital-scam-prevention](/assets/images/digital-scam-prevention.jpg)
 
 지난달 퇴근길에 무심코 확인한 문자 한 통 때문에 정말 식겁한 적이 있습니다. "주소지 오류로 택배 배송이 지연되고 있습니다. 아래 링크에서 수정해 주세요." 평소 같으면 그냥 넘겼을 텐데, 마침 부모님 댁에 보낸 홍삼 선물이 도착할 때가 된 터라 아무 의심 없이 링크를 누를 뻔했거든요. 
 

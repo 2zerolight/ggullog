@@ -1,11 +1,14 @@
 ---
 title: "아파트 관리비 5만 원 줄인 고지서 해독법과 난방비 절약 후기"
+thumbnail: "/assets/images/saving-apartment-fees.jpg"
 slug: "saving-apartment-fees"
 category: "saving"
 category_name: "절약·재테크"
 date: "2026-07-12"
 description: "매달 나오는 아파트 관리비 고지서, 제대로 읽고 계신가요? 난방비와 수도요금을 줄인 현실적인 경험담을 공유합니다."
 ---
+
+![saving-apartment-fees](/assets/images/saving-apartment-fees.jpg)
 
 지난달 우편함에 꽂힌 아파트 관리비 고지서를 무심코 뜯어봤다가 정말 깜짝 놀랐습니다. 평소보다 앞자리가 훌쩍 뛰어오른 숫자가 적혀 있었거든요. 겨울에서 봄으로 넘어가는 시기라 난방을 꽤 줄였다고 생각했는데, 오히려 지난달보다 요금이 더 많이 나온 겁니다. 
 

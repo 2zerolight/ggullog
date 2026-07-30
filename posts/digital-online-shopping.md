@@ -1,11 +1,14 @@
 ---
 title: "온라인 쇼핑, 남들보다 비싸게 사고 후회하지 않는 현실적인 팁"
+thumbnail: "/assets/images/digital-online-shopping.jpg"
 slug: "digital-online-shopping"
 category: "digital"
 category_name: "디지털·생활편의"
 date: "2026-06-15"
 description: "가격비교 사이트의 함정부터 쿠폰 적용 순서, 해외직구 주의점까지. 10년차 블로거가 직접 겪으며 터득한 현실적인 온라인 쇼핑 노하우를 공유합니다."
 ---
+
+![digital-online-shopping](/assets/images/digital-online-shopping.jpg)
 
 지난달 카드값 명세서를 보고 한참을 다시 봤습니다. 평소보다 40만 원이나 더 나왔거든요. 범인은 바로 '최저가'라는 단어에 홀려 샀던 로봇청소기였습니다. 분명히 포털 사이트에서 제일 싼 걸 골랐다고 생각했는데, 며칠 뒤에 친구가 저보다 5만 원이나 싸게 샀다는 얘기를 듣고 어찌나 배가 아프던지요. 
 

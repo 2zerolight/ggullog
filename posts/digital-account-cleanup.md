@@ -1,11 +1,14 @@
 ---
 title: "스팸 문자 폭탄 맞고 시작한 10년 묵은 계정 정리 후기"
+thumbnail: "/assets/images/digital-account-cleanup.jpg"
 slug: "digital-account-cleanup"
 category: "digital"
 category_name: "디지털·생활편의"
 date: "2026-07-08"
 description: "매일 쏟아지는 스팸 문자에 지쳐 시작한 개인정보 정리 과정입니다. e프라이버시 클린서비스와 턴오프 미리알림을 활용해 안 쓰는 계정을 깔끔하게 지우는 방법을 담았습니다."
 ---
+
+![digital-account-cleanup](/assets/images/digital-account-cleanup.jpg)
 
 지난주 화요일 오후였어요. 회의 중에 갑자기 휴대폰이 미친 듯이 울리기 시작하더라고요. 화면을 보니 해외 발신으로 온 정체불명의 결제 승인 문자와 대출 권유 스팸 문자가 연달아 10통 넘게 쏟아지고 있었습니다. 순간 등골이 서늘해지면서 혹시 내 명의가 도용된 건 아닌가 싶어 가슴이 철렁 내려앉았죠. 다행히 실제 결제가 이루어진 건 아니었지만, 그날 저녁 내내 찝찝한 기분을 지울 수가 없었습니다.
 

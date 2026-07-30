@@ -1,11 +1,14 @@
 ---
 title: "세탁기 돌릴 때마다 옷 망가지는 분들, 이것만은 꼭 보세요"
+thumbnail: "/assets/images/home-laundry-tips.jpg"
 slug: "home-laundry-tips"
 category: "home"
 category_name: "살림·청소"
 date: "2026-06-15"
 description: "세제 양 조절부터 물 온도, 건조기 사용법까지. 아끼는 옷 망치지 않고 오래 입는 현실적인 세탁 노하우를 공유합니다."
 ---
+
+![home-laundry-tips](/assets/images/home-laundry-tips.jpg)
 
 지난달 아끼던 니트를 세탁기에서 꺼냈을 때의 그 황당함이란. 분명 조심한다고 했는데, 남편 옷인가 싶을 정도로 쪼그라들어 있더라고요. 10년 차 주부인 저도 가끔 이런 실수를 하니, 자취를 막 시작하신 분들이나 세탁이 익숙하지 않은 분들은 오죽할까 싶습니다.
 

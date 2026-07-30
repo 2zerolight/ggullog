@@ -89,12 +89,17 @@ def layout(title, description, content, canonical, active=''):
 
 def post_card(p):
     cat_name = CATEGORIES[p['category']][0]
+    thumb = p.get('thumbnail', '')
+    thumb_html = f'<div class="card-thumb"><img src="{thumb}" alt="{html.escape(p["title"])}" loading="lazy"></div>' if thumb else ''
     return f'''<article class="card">
   <a href="/posts/{p['slug']}.html" class="card-link">
-    <span class="card-cat">{cat_name}</span>
-    <h2 class="card-title">{html.escape(p['title'])}</h2>
-    <p class="card-desc">{html.escape(p['description'])}</p>
-    <div class="card-meta"><time datetime="{p['date']}">{fmt_date(p['date'])}</time> · {p['reading_min']}분 읽기</div>
+    {thumb_html}
+    <div class="card-content">
+      <span class="card-cat">{cat_name}</span>
+      <h2 class="card-title">{html.escape(p['title'])}</h2>
+      <p class="card-desc">{html.escape(p['description'])}</p>
+      <div class="card-meta"><time datetime="{p['date']}">{fmt_date(p['date'])}</time> · {p['reading_min']}분 읽기</div>
+    </div>
   </a>
 </article>'''
 

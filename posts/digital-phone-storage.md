@@ -1,11 +1,14 @@
 ---
 title: "스마트폰 용량 부족할 때 제가 쓰는 현실적인 정리법"
+thumbnail: "/assets/images/digital-phone-storage.jpg"
 slug: "digital-phone-storage"
 category: "digital"
 category_name: "디지털·생활편의"
 date: "2026-06-15"
 description: "매번 '저장공간이 부족합니다' 알림에 시달리다 직접 터득한 스마트폰 용량 확보 노하우. 클라우드 선택부터 카톡방 정리까지 현실적인 팁을 공유합니다."
 ---
+
+![digital-phone-storage](/assets/images/digital-phone-storage.jpg)
 
 지난주 조카 돌잔치에서 한참 동영상을 찍고 있는데 갑자기 화면이 멈췄습니다. "저장공간이 부족합니다." 하필 하이라이트인 돌잡이 순간에 말이죠. 허둥지둥 예전 사진들을 지우느라 결국 조카가 연필 잡는 순간은 눈으로만 담아야 했습니다. 
 

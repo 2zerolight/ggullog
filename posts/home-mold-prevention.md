@@ -1,11 +1,14 @@
 ---
 title: "장마철 곰팡이, 락스 냄새 없이 확실하게 잡는 현실적인 방법"
+thumbnail: "/assets/images/home-mold-prevention.jpg"
 slug: "home-mold-prevention"
 category: "home"
 category_name: "살림·청소"
 date: "2026-06-15"
 description: "매년 여름마다 반복되는 곰팡이와의 전쟁. 욕실, 베란다, 옷장 등 공간별로 직접 해보고 효과 본 현실적인 제거법과 습도 관리 노하우를 공유합니다."
 ---
+
+![home-mold-prevention](/assets/images/home-mold-prevention.jpg)
 
 지난달 전기요금 고지서를 보고 한참을 다시 봤습니다. 평소보다 4만 원이 더 나왔거든요. 범인은 바로 제습기였습니다. 장마철 꿉꿉함과 스멀스멀 올라오는 곰팡이 냄새가 싫어서 하루 종일 틀어뒀더니 요금 폭탄을 맞은 거죠. 
 

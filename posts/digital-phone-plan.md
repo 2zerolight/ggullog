@@ -1,11 +1,14 @@
 ---
 title: "알뜰폰 갈아타기, 직접 해보고 알게 된 진짜 장단점"
+thumbnail: "/assets/images/digital-phone-plan.jpg"
 slug: "digital-phone-plan"
 category: "digital"
 category_name: "디지털·생활편의"
 date: "2026-06-15"
 description: "매달 나가는 통신비가 아까워 직접 알뜰폰으로 갈아타며 겪은 현실적인 후기와 요금제 선택 팁, 그리고 주의할 점을 솔직하게 정리했습니다."
 ---
+
+![digital-phone-plan](/assets/images/digital-phone-plan.jpg)
 
 지난달 카드 명세서를 보고 한참을 다시 봤습니다. 평소보다 4만 원이 더 나왔거든요. 범인은 바로 통신비였습니다. 4인 가족 기준으로 매달 20만 원이 훌쩍 넘는 돈이 고정적으로 빠져나가고 있었죠. 
 

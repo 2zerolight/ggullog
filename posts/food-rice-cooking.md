@@ -1,11 +1,14 @@
 ---
 title: "매일 먹는 밥, 식당처럼 찰지게 짓는 현실적인 방법"
+thumbnail: "/assets/images/food-rice-cooking.jpg"
 slug: "food-rice-cooking"
 category: "food"
 category_name: "요리·식재료"
 date: "2026-05-15"
 description: "똑같은 쌀, 똑같은 밥솥인데 왜 우리 집 밥맛만 다를까요? 쌀 보관부터 물 맞추기, 남은 밥 냉동 꿀팁까지 직접 겪어보고 터득한 밥 짓기 노하우를 공유합니다."
 ---
+
+![food-rice-cooking](/assets/images/food-rice-cooking.jpg)
 
 얼마 전 친정엄마가 오셔서 밥을 드시더니 대뜸 그러시더라고요. "너 쌀 어디서 샀니? 밥이 왜 이렇게 푸석해?" 
 

@@ -1,11 +1,14 @@
 ---
 title: "4인 가족 식비, 한 달에 30만 원 줄인 현실적인 장보기 요령"
+thumbnail: "/assets/images/saving-food-expenses.jpg"
 slug: "saving-food-expenses"
 category: "saving"
 category_name: "절약·재테크"
 date: "2026-05-18"
 description: "매달 100만 원 훌쩍 넘던 4인 가족 식비. 뻔한 소리 말고 진짜로 식비 줄이는 데 도움 됐던 현실적인 장보기 방법과 냉장고 관리 팁을 공유합니다."
 ---
+
+![saving-food-expenses](/assets/images/saving-food-expenses.jpg)
 
 지난달 가계부를 정리하다가 식비 항목을 보고 한참을 다시 봤습니다. 외식을 자주 한 것도 아닌데 마트 몇 번 다녀온 영수증이 모이니 100만 원이 훌쩍 넘더라고요. 한창 먹성 좋은 아이들이 있는 4인 가족이라지만, 하루가 다르게 오르는 장바구니 물가를 체감하니 덜컥 겁이 났습니다.
 

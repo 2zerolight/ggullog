@@ -1,11 +1,14 @@
 ---
 title: "냉장고 파먹기 10년차의 현실적인 반찬 재활용 노하우"
+thumbnail: "/assets/images/food-leftover-recipes.jpg"
 slug: "food-leftover-recipes"
 category: "food"
 category_name: "요리·식재료"
 date: "2026-06-15"
 description: "매번 버리게 되는 애매한 남은 반찬들, 식비도 아끼고 맛있는 한 끼로 바꾸는 현실적인 냉장고 파먹기 팁을 공유합니다."
 ---
+
+![food-leftover-recipes](/assets/images/food-leftover-recipes.jpg)
 
 지난달 식비 가계부를 정리하다가 한숨이 푹 나왔습니다. 외식도 줄이고 배달 앱도 지웠는데, 식비가 생각보다 안 줄었더라고요. 원인은 냉장고에 있었습니다. 장을 보고 며칠 지나면 먹을 만한 반찬은 없고, 밀폐용기에 한두 젓가락 남은 애매한 반찬들만 덩그러니 자리를 차지하고 있었죠. 결국 또 장을 보거나 배달을 시키고, 며칠 뒤 쉰내 나는 반찬을 버리며 죄책감을 느끼는 패턴이 반복되고 있었습니다.
 

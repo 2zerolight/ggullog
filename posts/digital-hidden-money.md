@@ -1,11 +1,14 @@
 ---
 title: "3년 전 해지한 통신비 7만 원 돌려받은 숨은 돈 찾기 후기"
+thumbnail: "/assets/images/digital-hidden-money.jpg"
 slug: "digital-hidden-money"
 category: "digital"
 category_name: "디지털·생활편의"
 date: "2026-07-15"
 description: "우연히 정부24와 파인 사이트를 뒤지다가 잊고 있던 환급금과 숨은 보험금을 찾은 경험담입니다. 복잡해 보이지만 막상 해보면 10분도 안 걸리는 숨은 돈 찾는 방법을 정리해 봤어요."
 ---
+
+![digital-hidden-money](/assets/images/digital-hidden-money.jpg)
 
 지난주 주말에 집에서 뒹굴거리다가 우연히 뉴스 기사를 하나 봤거든요. 우리나라 사람들이 찾아가지 않은 숨은 돈이 몇조 원 단위라는 내용이었어요. 평소 같으면 그냥 남의 이야기려니 하고 넘겼을 텐데, 그날따라 왠지 모르게 내 돈도 어딘가에 잠자고 있지 않을까 하는 묘한 촉이 오더라고요. 
 

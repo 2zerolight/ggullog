@@ -1,11 +1,14 @@
 ---
 title: "전기요금 4만 원 줄인 현실적인 절약 후기"
+thumbnail: "/assets/images/saving-utility-bills.jpg"
 slug: "saving-utility-bills"
 category: "saving"
 category_name: "절약·재테크"
 date: "2026-06-10"
 description: "지난달 전기요금 고지서를 보고 충격받아 시작한 현실적인 전기세 절약 방법. 누진세 피하는 팁부터 에어컨, 냉장고 사용법, 에너지 캐시백까지 직접 해보고 효과 본 방법들을 공유합니다."
 ---
+
+![saving-utility-bills](/assets/images/saving-utility-bills.jpg)
 
 지난달 전기요금 고지서를 보고 한참을 다시 봤습니다. 평소보다 4만 원이 더 나왔거든요. 특별히 뭘 더 쓴 것도 없는 것 같은데 억울한 마음마저 들었습니다. 
 

@@ -1,11 +1,14 @@
 ---
 title: "버리지 못하는 병, 제가 고쳐드릴게요 (현실적인 정리법)"
+thumbnail: "/assets/images/home-decluttering.jpg"
 slug: "home-decluttering"
 category: "home"
 category_name: "살림·청소"
 date: "2026-06-15"
 description: "언젠가 쓸 것 같아 쌓아둔 물건들, 이제는 비워야 할 때입니다. 10년 차 주부가 직접 겪고 깨달은 현실적인 물건 비우기 노하우와 중고 거래 팁을 나눕니다."
 ---
+
+![home-decluttering](/assets/images/home-decluttering.jpg)
 
 지난주 주말, 베란다 구석에 쌓여있던 박스들을 보고 한숨이 푹 나왔습니다. 이사 올 때 '나중에 정리해야지' 하고 밀어둔 게 벌써 3년 전이더라고요. 박스를 열어보니 유행 지난 옷, 안 쓰는 믹서기, 심지어 언제 샀는지 기억도 안 나는 운동기구까지 가득했습니다. 
 

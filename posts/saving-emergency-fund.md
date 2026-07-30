@@ -1,11 +1,14 @@
 ---
 title: "월급쟁이 비상금 300만 원, 6개월 만에 모은 현실적인 방법"
+thumbnail: "/assets/images/saving-emergency-fund.jpg"
 slug: "saving-emergency-fund"
 category: "saving"
 category_name: "절약·재테크"
 date: "2026-05-15"
 description: "갑작스러운 지출에 대비하는 비상금. 6개월 만에 300만 원을 모았던 제 경험담과 파킹통장 활용법, 지출 구조 점검 팁을 공유합니다."
 ---
+
+![saving-emergency-fund](/assets/images/saving-emergency-fund.jpg)
 
 지난달 신용카드 명세서를 보고 한참을 멍하니 있었습니다. 평소보다 40만 원이 더 나왔거든요. 
 

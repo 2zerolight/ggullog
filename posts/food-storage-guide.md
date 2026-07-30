@@ -1,11 +1,14 @@
 ---
 title: "냉장고 파먹기 10년차의 식비 줄이는 채소 보관법"
+thumbnail: "/assets/images/food-storage-guide.jpg"
 slug: "food-storage-guide"
 category: "food"
 category_name: "요리·식재료"
 date: "2026-05-15"
 description: "버려지는 식재료만 줄여도 식비가 확 줍니다. 10년차 주부가 직접 겪으며 터득한 현실적인 채소, 과일 보관 노하우를 공유합니다."
 ---
+
+![food-storage-guide](/assets/images/food-storage-guide.jpg)
 
 지난달 생활비 가계부를 정리하다가 한숨이 푹 나왔습니다. 식비가 평소보다 15만 원이나 더 나왔거든요. 곰곰이 생각해보니 마트에서 세일한다고 잔뜩 사 온 채소들이 문제였습니다. 냉장고 구석에서 시들고 물러져서 버린 게 한두 개가 아니었죠. 
 

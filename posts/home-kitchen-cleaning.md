@@ -1,11 +1,14 @@
 ---
 title: "기름때와 물때, 힘 안 들이고 지우는 현실적인 주방 청소법"
+thumbnail: "/assets/images/home-kitchen-cleaning.jpg"
 slug: "home-kitchen-cleaning"
 category: "home"
 category_name: "살림·청소"
 date: "2026-05-15"
 description: "매일 하는 주방 청소, 화학 세제 없이 천연 세제 3총사로 똑똑하게 끝내는 방법. 가스레인지 기름때부터 싱크대 물때, 배수구 냄새까지 직접 해보고 효과 본 현실적인 청소 루틴을 공유합니다."
 ---
+
+![home-kitchen-cleaning](/assets/images/home-kitchen-cleaning.jpg)
 
 지난 주말, 큰맘 먹고 주방 후드를 열었다가 정말 깜짝 놀랐습니다. 노랗게 굳어버린 기름때가 뚝뚝 떨어질 것 같더라고요. 평소에 눈에 보이는 곳만 대충 닦고 넘긴 대가를 톡톡히 치르는 기분이었습니다. 
 
