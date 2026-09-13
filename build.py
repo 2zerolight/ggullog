@@ -59,8 +59,8 @@ def layout(title, description, content, canonical, active=''):
 <meta property="og:site_name" content="{SITE_NAME}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">
-<meta name="google-adsense-account" content="ca-pub-8241484658511531">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8241484658511531" crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-3618308526218183">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3618308526218183" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="site-header">
@@ -206,7 +206,7 @@ def build():
 
     # ---- ads.txt placeholder ----
     open(os.path.join(OUT, 'ads.txt'), 'w', encoding='utf-8').write(
-        'google.com, pub-8241484658511531, DIRECT, f08c47fec0942fa0\n')
+        'google.com, pub-3618308526218183, DIRECT, f08c47fec0942fa0\n')
 
     # ---- 404 ----
     content404 = '''<section class="hero">
