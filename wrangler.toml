@@ -1,4 +1,6 @@
 name = "ggullog"
+# 이 계정에 ggullog 워커가 있습니다 (계정이 2개라 지정하지 않으면 배포 시 선택 프롬프트가 뜸)
+account_id = "3a70dca9d2c01672845a5d4cbeb70b10"
 compatibility_date = "2026-07-01"
 
 [assets]
